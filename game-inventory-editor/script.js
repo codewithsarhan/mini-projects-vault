@@ -7,7 +7,6 @@ completeBtn.forEach((clicks) => {
 
     let click = true;
 
-
     clicks.addEventListener("click", () => {
 
 
@@ -25,9 +24,6 @@ completeBtn.forEach((clicks) => {
             click = true;
 
         }
-
-
-
     })
-
 })
+
