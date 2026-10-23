@@ -1,37 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Inventory Item Editor</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quest Board</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 
-<div class="inventory">
-  <h2>Game Inventory</h2>
-  <p>Manage your collected items</p>
+  <main class="quest-board">
+    <h1>⚔ Quest Board</h1>
+    <p>Complete your daily missions</p>
 
-  <div class="item-card">
-    <h3>⚔️ Shadow Sword</h3>
-    <p>Rarity: Legendary</p>
-    <p class="description" id="itmDiscription">A powerful dark sword.</p>
-    <button id="inspectBtn">Inspect Item</button>
-  </div>
+    <button id="completeAll">Complete All Quests</button>
 
-  <div class="details" id="specialItmDetails">
-    <h3>Item Details</h3>
-    <p id="itemDetails">Select Inspect to view details.</p>
+    <section class="quest-list">
+      <article class="quest">
+        <h3>Learn JavaScript</h3>
+        <p>Reward: 100 XP</p>
+        <p class="status">Status: Incomplete</p>
+        <button class="completeBtn">Complete</button>
+      </article>
 
-    <p id="itmSpeciality"><b>Rarity = <span style="color: red; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Mythic</span></b><br>
-    <b>Speciality = <span style="color: blue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Its Special Ability To Kill One Shot.</span></b>
-    </p>
+      <article class="quest">
+        <h3>Practice DOM</h3>
+        <p>Reward: 150 XP</p>
+        <p class="status">Status: Incomplete</p>
+        <button class="completeBtn">Complete</button>
+      </article>
 
-    <button id="specialBtn">Show Special Details</button>
-  </div>
-</div>
+      <article class="quest">
+        <h3>Build a Mini Project</h3>
+        <p>Reward: 200 XP</p>
+        <p class="status">Status: Incomplete</p>
+        <button class="completeBtn">Complete</button>
+      </article>
+    </section>
 
-<script src="script.js"></script>
+    <h3 id="summary">Completed: 0 / 3</h3>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

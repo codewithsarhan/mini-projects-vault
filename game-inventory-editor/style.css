@@ -1,73 +1,77 @@
+
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
 }
 
 body {
-  background-color: #f0f4f8;
-  background-image: linear-gradient(#e2e8f0 1px, transparent 1px), linear-gradient(90deg, #e2e8f0 1px, transparent 1px);
-  background-size: 20px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  margin: 0;
+  padding: 30px 15px;
+  font-family: Arial, sans-serif;
+  background: #10131c;
+  color: #f1f5f9;
 }
 
-.inventory {
-  background-color: #ffffff;
-  border: 2px solid #1e293b;
-  border-radius: 4px;
+.quest-board {
+  max-width: 520px;
+  margin: auto;
   padding: 24px;
-  width: 380px;
+  background: #191e2b;
+  border-radius: 16px;
 }
 
-.inventory h2 {
-  color: #1e293b;
-  font-size: 22px;
-  margin-bottom: 4px;
-}
-
-.inventory > p {
-  color: #334155;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.item-card, .details {
-  border: 2px solid #1e293b;
-  border-radius: 4px;
-  padding: 16px;
-  margin-bottom: 16px;
-  background-color: #ffffff;
-}
-
-.item-card h3, .details h3 {
-  color: #1e293b;
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-.item-card p, .details p {
-  color: #334155;
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-button {
-  width: 100%;
-  padding: 8px;
-  background-color: #ffffff;
-  border: 2px solid #1e293b;
-  border-radius: 4px;
-  color: #1e293b;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
+h1, body > p {
   text-align: center;
 }
 
+.quest-board > p {
+  color: #aab4c8;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.quest {
+  background: #242b3b;
+  border: 1px solid #343d52;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 12px;
+}
+
+.quest h3 {
+  margin-top: 0;
+}
+
+.quest p {
+  color: #c4ccda;
+}
+
+button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #7c5cff;
+  color: white;
+  cursor: pointer;
+}
+
 button:hover {
-  background-color: #f8fafc;
+  opacity: 0.85;
+}
+
+#completeAll {
+  width: 100%;
+}
+
+#summary {
+  text-align: center;
+  color: #a78bfa;
+}
+
+.quest.completed {
+  border-color: #22c55e;
+  background: #172d2a;
+}
+
+.quest.completed .status {
+  color: #4ade80;
 }
