@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSprint - Practice Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="dashboard">
+
+        <header class="header">
+            <div>
+                <h1>CodeSprint</h1>
+                <p>Personal Practice Tracker</p>
+            </div>
+            <span class="day-badge">Daily Session</span>
+        </header>
+
+        <section class="progress-section">
+            <p class="section-label">YOUR PROGRESS</p>
+
+            <h2><span id="completedCount">0</span> / <span id="totalCount">0</span></h2>
+
+            <div class="progress-track">
+                <div id="progressBar"></div>
+            </div>
+
+            <p>Keep building your skills!</p>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <h2 id="totalTasks">0</h2>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="completedTasks">0</h2>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="remainingTasks">0</h2>
+                <p>Remaining</p>
+            </div>
+
+        </section>
+
+        <section class="add-section">
+
+            <h2>Add New Practice</h2>
+
+            <input type="text" id="taskInput" placeholder="Enter practice title...">
+
+            <select id="categoryInput">
+                <option value="">Select category</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="DOM Manipulation">DOM Manipulation</option>
+                <option value="HTML & CSS">HTML & CSS</option>
+                <option value="MERN Stack">MERN Stack</option>
+            </select>
+
+            <button id="addTaskBtn">+ Add Practice</button>
+
+        </section>
+
+        <section class="tasks-section">
+
+            <div class="tasks-heading">
+                <h2>Your Practice Tasks</h2>
+                <span >Task <span id="taskLabel" >0</span></span>
+            </div>
+
+            <div id="taskContainer">
+
+                <p id="emptyMessage">
+                    No practice tasks yet. Add your first task!
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
